@@ -40,4 +40,9 @@ public class BasicCalculator extends JFrame
             BasicCalculator calculator = new BasicCalculator();
             calculator.setVisible(true);
     }
+
+    // Allows the addition function
+    public double add ()
+    {
+    }
 }
