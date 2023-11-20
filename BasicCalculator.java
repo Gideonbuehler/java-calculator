@@ -46,7 +46,7 @@ public class BasicCalculator extends JFrame
     {
     }
 
-    // ALlows the subtraction function
+    // ALlows the square root function
     public double squareRoot() 
     {
     }
