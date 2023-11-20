@@ -1,4 +1,4 @@
-#delegates tasks for everyone:
+# delegates tasks for everyone:
 Matt - @LampShade63
 Aditiya - 
 Gideon - 
