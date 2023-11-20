@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class BasicCalculator extends JFrame
 {
-
+    private double x; //the variable used to parse the String from the input field
     private JTextField inputField;
 
     public BasicCalculator() {
