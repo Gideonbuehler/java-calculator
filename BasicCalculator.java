@@ -45,4 +45,8 @@ public class BasicCalculator extends JFrame
     public double add ()
     {
     }
+
+    public double squareRoot() {
+
+    }
 }
