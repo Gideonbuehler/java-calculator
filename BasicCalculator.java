@@ -44,11 +44,15 @@ public class BasicCalculator extends JFrame
     // Allows the equals function
     public double result() 
     {
+        total = double finalTotal
+        return finalTotal;
     }
     
     // Allows the calculator screen to be cleared
     public double clear()
     {
+        total = 0;
+        inputField = "";
     }
     
 
