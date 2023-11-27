@@ -20,7 +20,7 @@ public class BasicCalculator extends JFrame
         // Initiates grid layout for JPanel
         JPanel buttonPanel = new JPanel(new GridLayout(5, 4)); // Sets the grid to 5 rows and 4 columns
         String[] buttonLabels = {
-                "del", "sqr", "\u221a", "clear",
+                "sqr", "\u221a", "clear",
                 "7", "8", "9", "/",
                 "4", "5", "6", "*",
                 "1", "2", "3", "-",
@@ -51,9 +51,5 @@ public class BasicCalculator extends JFrame
     {
     }
     
-    // Allows a deletion from the screen
-    public double delete() 
-    {
-    }
 
 }
