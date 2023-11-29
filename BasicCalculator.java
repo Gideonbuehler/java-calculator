@@ -102,7 +102,7 @@ public class BasicCalculator extends JFrame
         
                 // Parse an expression, handling addition and subtraction
                 double parseExpression() {
-                    double x = parseTerm(); // Calls parseTerm to handle operators with higher precednce
+                    double x = parseTerm(); // Calls parseTerm to handle operators with higher precedence
 
                     // While true loop so it goes on infinitely
                     while (true) {
