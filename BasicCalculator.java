@@ -59,6 +59,9 @@ public class BasicCalculator extends JFrame
             } else if (buttonText.equals("clear")) {
                 inputField.setText(null); // Sets the text of input field to null, acting as a clear button
 
+            } else if (buttonText.equals("y^x")) {
+                inputField.setText(inputField.getText() + "^"); // Adds an exponent symbol to the input field
+
             } else {
                 inputField.setText(inputField.getText() + buttonText); // Displays the buttons' values on inputField
             }
@@ -137,7 +140,13 @@ public class BasicCalculator extends JFrame
 
                             x /= parseFactor(); // Performs division
 
-                        } else {
+                        }
+                        else if (isOperator('^')) {
+                            nextChar(); // Moves to next character
+
+                            x = Math.pow(x, parseFactor()); // Performs exponential powers
+
+                        }else {
                             return x; // Returns x if no mult or division is found
                         }
                     }
