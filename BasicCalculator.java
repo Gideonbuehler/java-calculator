@@ -38,6 +38,7 @@ public class BasicCalculator extends JFrame
 
         // Initiates grid layout for JPanel
         JPanel buttonPanel = new JPanel(new GridLayout(5, 4)); // Sets the grid to 5 rows and 4 columns
+        // Array containing all button labels.
         String[] buttonLabels = {
                 "y^x","\u215f", "\u221a", "clear", // removed "x\u00b2"
                 "7", "8", "9", "/",
