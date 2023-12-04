@@ -2,10 +2,11 @@
 Java program for a basic calculator using a GUI.
 Final Project for CIS 111
 Team:
-Matthew
-Aditiya
 Gideon
+Aditiya
+Matthew
 Patrick
+Jeff
 */
 
 // used for implementing GUI.
