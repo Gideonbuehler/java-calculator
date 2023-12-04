@@ -19,7 +19,7 @@ import java.awt.event.ActionListener;
 // the BasicCalculator class inherits the JFrame class using the "extends" keyword.
 public class BasicCalculator extends JFrame
 {
-    private JTextField inputField;
+    private JTextField inputField; // initializing the input text field for calculator.
 
     public BasicCalculator() {
 
