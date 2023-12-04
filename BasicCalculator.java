@@ -167,6 +167,10 @@ public class BasicCalculator extends JFrame
                             nextChar();
 
                             x = Math.sqrt(x);
+                        } else if (isOperator('\u215f')) {
+                            nextChar();
+
+                            x = 1/x;
                         }
                         else {
                             return x; // Returns x if no mult or division is found
