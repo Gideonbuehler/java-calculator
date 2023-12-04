@@ -163,7 +163,12 @@ public class BasicCalculator extends JFrame
 
                             x = Math.pow(x, parseFactor()); // Performs exponential powers
 
-                        }else {
+                        } else if (isOperator('\u221a')) {
+                            nextChar();
+
+                            x = Math.sqrt(x);
+                        }
+                        else {
                             return x; // Returns x if no mult or division is found
                         }
                     }
