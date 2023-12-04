@@ -1,3 +1,13 @@
+/**
+Java program for a basic calculator using a GUI.
+Final Project for CIS 111
+Team:
+Matthew
+Aditiya
+Gideon
+Patrick
+*/
+
 // used for implementing GUI.
 import javax.swing.*;
 import java.awt.*;
@@ -6,6 +16,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+// the BasicCalculator class inherits the JFrame class using the "extends" keyword.
 public class BasicCalculator extends JFrame
 {
     private double total; //returns the total value from the given input
