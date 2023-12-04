@@ -19,7 +19,7 @@ import java.awt.event.ActionListener;
 // the BasicCalculator class inherits the JFrame class using the "extends" keyword.
 public class BasicCalculator extends JFrame
 {
-    private JTextField inputField; // REMOVED - private double total; returns the total value from the given input
+    private JTextField inputField;
 
     public BasicCalculator() {
 
@@ -198,22 +198,6 @@ public class BasicCalculator extends JFrame
             }.parse(); // Initiates the parse method
         }
     }
-
-/*
-    // Allows the equals function
-    public double result() 
-    {
-        total = double finalTotal;
-        return finalTotal;
-    }
-    
-    // Allows the calculator screen to be cleared
-    public double clear()
-    {
-        total = 0;
-        inputField = "";
-    }
-*/
     
     public static void main(String[] args) {
             BasicCalculator calculator = new BasicCalculator();
