@@ -22,6 +22,7 @@ public class BasicCalculator extends JFrame
 {
     private JTextField inputField; // initializing the input text field for calculator.
 
+    // constructor for the BasicCalculator class.
     public BasicCalculator() {
 
         // Exit program when calculator is closed
