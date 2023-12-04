@@ -1,6 +1,8 @@
+// used for implementing GUI.
 import javax.swing.*;
 import java.awt.*;
 
+// used for button listeners.
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
