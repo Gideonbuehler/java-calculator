@@ -43,7 +43,7 @@ public class BasicCalculator extends JFrame
         // Array containing all button labels.
         String[] buttonLabels = {
                 "y^x","\u215f", "\u221a", "clear", 
-                "7", "8", "9", "/",
+                "7", "8", "9", "\u00f7",
                 "4", "5", "6", "*",
                 "1", "2", "3", "-",
                 "0", ".", "=", "+"
