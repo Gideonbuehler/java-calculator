@@ -9,18 +9,18 @@ Patrick
 Jeff
 */
 
-// used for implementing GUI.
+// Used for implementing GUI.
 import javax.swing.*;
 import java.awt.*;
 
-// used for button listeners.
+// Used for button listeners.
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// the BasicCalculator class inherits the JFrame class using the "extends" keyword.
+// The BasicCalculator class inherits the JFrame class using the "extends" keyword.
 public class BasicCalculator extends JFrame
 {
-    private JTextField inputField; // initializing the input text field for calculator.
+    private JTextField inputField; // Initializing the input text field for calculator.
 
     /**
      * Constructor for the BasicCalculator class, holds all of the code for the calculator
@@ -67,7 +67,7 @@ public class BasicCalculator extends JFrame
      */
     private class ButtonClickListener implements ActionListener {
         
-        // the actionPerformed recognizes which button is pressed.
+        // The actionPerformed recognizes which button is pressed.
         public void actionPerformed(ActionEvent e) {
             JButton source = (JButton) e.getSource(); // Finds the source of the button press
             String buttonText = source.getText(); // Finds the text of the button that was pressed
