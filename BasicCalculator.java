@@ -9,20 +9,22 @@ Patrick
 Jeff
 */
 
-// Used for implementing GUI.
+// used for implementing GUI.
 import javax.swing.*;
 import java.awt.*;
 
-// Used for button listeners.
+// used for button listeners.
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// The BasicCalculator class inherits the JFrame class using the "extends" keyword.
+// the BasicCalculator class inherits the JFrame class using the "extends" keyword.
 public class BasicCalculator extends JFrame
 {
-    private JTextField inputField; // Initializing the input text field for calculator.
+    private JTextField inputField; // initializing the input text field for calculator.
 
-    // Constructor for the BasicCalculator class.
+    /**
+     * Constructor for the BasicCalculator class, holds all of the code for the calculator
+     */
     public BasicCalculator() {
 
         // Exit program when calculator is closed
@@ -40,7 +42,7 @@ public class BasicCalculator extends JFrame
         JPanel buttonPanel = new JPanel(new GridLayout(5, 4)); // Sets the grid to 5 rows and 4 columns
         // Array containing all button labels.
         String[] buttonLabels = {
-                "y^x","\u215f", "\u221a", "clear", // removed "x\u00b2"
+                "y^x","\u215f", "\u221a", "clear", 
                 "7", "8", "9", "/",
                 "4", "5", "6", "*",
                 "1", "2", "3", "-",
@@ -213,6 +215,10 @@ public class BasicCalculator extends JFrame
         }
     }
     
+    
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
             BasicCalculator calculator = new BasicCalculator();
             calculator.setVisible(true);
