@@ -81,6 +81,9 @@ public class BasicCalculator extends JFrame
             } else if (buttonText.equals("y^x")) {
                 inputField.setText(inputField.getText() + "^"); // Adds an exponent symbol to the input field
 
+            } else if (buttonText.equals("\u00f7")) {
+                inputField.setText(inputField.getText() + "/"); // Adds a division symbol to the input field
+
             } else {
                 inputField.setText(inputField.getText() + buttonText); // Displays the buttons' values on inputField
             }
