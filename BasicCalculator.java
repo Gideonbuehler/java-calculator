@@ -9,20 +9,20 @@ Patrick
 Jeff
 */
 
-// used for implementing GUI.
+// Used for implementing GUI.
 import javax.swing.*;
 import java.awt.*;
 
-// used for button listeners.
+// Used for button listeners.
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// the BasicCalculator class inherits the JFrame class using the "extends" keyword.
+// The BasicCalculator class inherits the JFrame class using the "extends" keyword.
 public class BasicCalculator extends JFrame
 {
-    private JTextField inputField; // initializing the input text field for calculator.
+    private JTextField inputField; // Initializing the input text field for calculator.
 
-    // constructor for the BasicCalculator class.
+    // Constructor for the BasicCalculator class.
     public BasicCalculator() {
 
         // Exit program when calculator is closed
