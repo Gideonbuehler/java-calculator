@@ -148,7 +148,7 @@ public class BasicCalculator extends JFrame
                 // Parse a term, handling multiplication and division
                 double parseTerm() {
 
-                    double x = parseFactor(); // Calls parseFactor to ensure PEMDOS is being followed
+                    double x = parseFactor(); // Calls parseFactor to ensure PEMDAS is being followed
 
                     while (true) {
                         if (isOperator('*')) {
@@ -162,6 +162,14 @@ public class BasicCalculator extends JFrame
                             x /= parseFactor(); // Performs division
 
                         }
+                        else if (isOperator('m')) {    // there may be a better, more efficient way of doing this
+                           nextChar();
+                              if (isOperator('o')) {
+                           nextChar();
+                           if (isOperator('d')) {
+                           nextChar();
+                            x = x % parseFactor(); // performs modulo operation
+                            }
                         else if (isOperator('^')) {
                             nextChar(); // Moves to next character
 
@@ -181,18 +189,24 @@ public class BasicCalculator extends JFrame
 
                             x = 1/x;
                         }
-                        else if (isOperator('m')) {
-                           nextChar();
-                              if (isOperator('o')) {
-                           nextChar();
-                           if (isOperator('d')) {
-                           nextChar();
-                            x = x % parseFactor(); // performs modulo operation
-                                                   // there may be a better, more efficient way of doing this
-                            }
+                        
                             }
                             
                         }
+                             else if (isOperator('π')) {
+/*                             --pos;
+                                 if (pos == 0)
+                                 {
+  tried to make a check for      nextChar();
+  if the previous character      nextChar();
+  was null, but it didn't        x = 1 * Math.PI;
+  work...                        }
+                             else{
+                                 nextChar();
+*/                               nextChar();
+                                 x = x * Math.PI;
+//                                }
+                             }
                         else{
                             return x; // Returns x if no mult or division is found
                         }
