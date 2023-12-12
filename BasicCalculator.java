@@ -192,12 +192,7 @@ public class BasicCalculator extends JFrame
 
                             x = 1/x;
                         }
-                        else if (isOperator('π')) {
-/* works ONLY if there is 
-a value before the symbol*/      nextChar();
-                                 x = x * Math.PI;
-//                                }
-                             }
+                        
                          else {
                             return x; // Returns x if no mult or division is found
                         }
