@@ -42,7 +42,7 @@ public class BasicCalculator extends JFrame
         JPanel buttonPanel = new JPanel(new GridLayout(6, 4)); // Sets the grid to 5 rows and 4 columns
         // Array containing all button labels.
         String[] buttonLabels = {
-                "㏑", "㏒", "e", "²",
+                "%", "㏑", "ǁ", "²",
                 "y^x","\u215f", "\u221a", "clear", 
                 "7", "8", "9", "\u00f7",
                 "4", "5", "6", "*",
@@ -196,17 +196,18 @@ public class BasicCalculator extends JFrame
                             nextChar();
 
                             x = Math.pow(x, 2);
-                        } else if (isOperator('㏒')) {
-                            nextChar();
-                            // Code for log
                         } else if (isOperator('㏑')) {
                             nextChar();
-
-                            // Code for ln
-                        } else if (isOperator('e')) {
-                            nextChar();
                             
-                            // code for e
+                            x = Math.log(x);
+                        } else if (isOperator('ǁ')) {
+                            nextChar();
+
+                            x = Math.abs(x);
+                        } else if (isOperator('%')) {
+                            nextChar();
+
+                            x = x/100;
                         }
                         else {
                             return x; // Returns x if no mult or division is found
