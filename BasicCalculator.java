@@ -187,27 +187,27 @@ public class BasicCalculator extends JFrame
                         } else if (isOperator('\u221a')) {
                             nextChar();
 
-                            x = Math.sqrt(x);
+                            x = Math.sqrt(x);        // Performs square root
                         } else if (isOperator('\u215f')) {
                             nextChar();
 
-                            x = 1/x;
+                            x = 1/x;        // Performs the reciprocal function
                         } else if (isOperator('²')) {
                             nextChar();
 
-                            x = Math.pow(x, 2);
+                            x = Math.pow(x, 2); // Performs the square function
                         } else if (isOperator('㏑')) {
                             nextChar();
                             
-                            x = Math.log(x);
+                            x = Math.log(x);        // Performs the natural logarithm function
                         } else if (isOperator('ǁ')) {
                             nextChar();
 
-                            x = Math.abs(x);
+                            x = Math.abs(x);        // Returns the absolute value
                         } else if (isOperator('%')) {
                             nextChar();
 
-                            x = x/100;
+                            x = x/100;        // Returns the value as a percentage
                         }
                         else {
                             return x; // Returns x if no mult or division is found
