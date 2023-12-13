@@ -17,10 +17,16 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-// the BasicCalculator class inherits the JFrame class using the "extends" keyword.
+// 
+/*
+ * The BasicCalculator class inherits the JFrame class using the "extends" keyword.
+ *  */
 public class BasicCalculator extends JFrame
-{
-    private JTextField inputField; // initializing the input text field for calculator.
+{   
+    /*
+     * initializing the input text field for calculator
+     */
+    private JTextField inputField;
 
     /**
      * Constructor for the BasicCalculator class, holds all of the code for the calculator
@@ -60,7 +66,9 @@ public class BasicCalculator extends JFrame
         add(buttonPanel, BorderLayout.CENTER);
     }
         
-    
+    /*
+     * Class that implements ActionListener to detect the firing of events
+     */
     private class ButtonClickListener implements ActionListener {
         /**
          * Method that listens to button presses and performs functions
@@ -187,27 +195,27 @@ public class BasicCalculator extends JFrame
                         } else if (isOperator('\u221a')) {
                             nextChar();
 
-                            x = Math.sqrt(x);        // Performs square root
+                            x = Math.sqrt(x);
                         } else if (isOperator('\u215f')) {
                             nextChar();
 
-                            x = 1/x;        // Performs the reciprocal function
+                            x = 1/x;
                         } else if (isOperator('²')) {
                             nextChar();
 
-                            x = Math.pow(x, 2); // Performs the square function
+                            x = Math.pow(x, 2);
                         } else if (isOperator('㏑')) {
                             nextChar();
                             
-                            x = Math.log(x);        // Performs the natural logarithm function
+                            x = Math.log(x);
                         } else if (isOperator('ǁ')) {
                             nextChar();
 
-                            x = Math.abs(x);        // Returns the absolute value
+                            x = Math.abs(x);
                         } else if (isOperator('%')) {
                             nextChar();
 
-                            x = x/100;        // Returns the value as a percentage
+                            x = x/100;
                         }
                         else {
                             return x; // Returns x if no mult or division is found
@@ -255,7 +263,7 @@ public class BasicCalculator extends JFrame
     
     /** 
      * Main method for the calculator, creates a new instance of BasicCalculator
-     * @param args 
+     * @param args For command line arguments
      */
     public static void main(String[] args) {
             BasicCalculator calculator = new BasicCalculator();
