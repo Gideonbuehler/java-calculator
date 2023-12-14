@@ -66,7 +66,7 @@ public class BasicCalculator extends JFrame
     }
         
     
-    /*
+    /**
     Class that implements ActionListener to detect the firing of events
     */
     private class ButtonClickListener implements ActionListener {
