@@ -65,9 +65,10 @@ public class BasicCalculator extends JFrame
         add(buttonPanel, BorderLayout.CENTER);
     }
         
-    /**
-       Class that implements ActionListener to detect the firing of events
-     */
+    
+    /** 
+    Class that implements ActionListener to detect the firing of events
+    */
     private class ButtonClickListener implements ActionListener {
         /**
          Method that listens to button presses and performs functions
@@ -111,7 +112,7 @@ public class BasicCalculator extends JFrame
         }
 
         /**
-          
+          Evaluates expressions.
           @param expression The number passed as an argument
           @return x The parsed number
          */
